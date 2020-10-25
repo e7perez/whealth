@@ -45,3 +45,117 @@
 .menu .info-box ul li p{
     font-size: 22px;
 }
+/*
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #menu-section #top-nav {
+        background: black;
+        height: 80px;
+        padding: 30px 40px;
+    }
+    
+    .menu-container img {
+        width: 100%;
+    }
+    .left-img {
+        margin: 0px;
+        width: 100%;
+    }
+    .menu {
+        background: white;
+        width: 100%;
+    }
+    .info-box {
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+    }
+    .menu h1 {
+        font-size: 70px;
+    }
+    .menu .info-box ul li p {
+        font-size: 32px;
+    }
+    .menu .info-box ul li h2 {
+        font-size: 50px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 991px) {
+    #menu-section #top-nav {
+        background: black;
+        height: 80px;
+        padding: 30px 40px;
+    }
+    .menu-container {
+        overflow: hidden;
+        height: 2000px !important;
+    }
+    .menu-container img {
+        width: 100%;
+    }
+    .left-img {
+        margin: 0px;
+        width: 100%;
+    }
+    .menu {
+        width: 100%;
+    }
+    .info-box {
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+    }
+    .menu h1 {
+        font-size: 70px;
+    }
+    .menu .info-box ul li p {
+        font-size: 32px;
+    }
+    .menu .info-box ul li h2 {
+        font-size: 50px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 1716px) {
+    #menu-section #top-nav {
+        background: black;
+        height: 80px;
+        padding: 30px 40px;
+    }
+    .menu-container {
+        overflow: hidden;
+        height: 2000px !important;
+    }
+    .menu-container img {
+        width: 100%;
+    }
+    .left-img {
+        margin: 0px;
+        width: auto;
+    }
+    .menu {
+        width: auto;
+    }
+    .info-box {
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+    }
+    .menu h1 {
+        font-size: 70px;
+    }
+    .menu .info-box ul li p {
+        font-size: 32px;
+    }
+    .menu .info-box ul li h2 {
+        font-size: 50px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
