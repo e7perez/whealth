@@ -145,7 +145,7 @@
     .topnav ul li a {
         display: none;
     }
-    .topnav a i.icon {
+    .topnav a i {
         float: right;
         display: block;
     }
@@ -182,12 +182,42 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
+    .topnav ul li a {
+        display: none;
+    }
+    .topnav a i {
+        float: right;
+        display: block;
+    }
+    .topnav ul {
+        margin: 0px;
+    }
+    .container {
+        width: 100vw;
+    }
+    #bottom-nav  {
+        display: none;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+    .topnav ul li a {
+        display: inline-block;
+    }
+    .topnav a i {
+        float: right;
+        display: none;
+    }
+    .topnav ul {
+        margin: 10px;
+    }
+    .container {
+        width: 100vw;
+    }
+    #bottom-nav  {
+        display: block;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
