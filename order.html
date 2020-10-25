@@ -14,7 +14,16 @@
 
 <body>
     <section id="menu-section">
-        <header id="top-nav">
+        <div id="dropdown" class="dropdown">
+            <a href="javascript:void(0);" id = "icon-close" onclick="closeFunction()">x</i></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="order.html"><span>Order</span></a></li>
+            </ul>
+        </div>
+        <header id="top-nav" class="topnav">
             <div class="logo">
                 <a href="index.html">W<span>HEALTH</span></a>
             </div>
@@ -24,6 +33,7 @@
                 <li><a href="locations.html">Locations</a></li>
                 <li><a href="order.html"><span>Order</span></a></li>
             </ul>
+            <a href="javascript:void(0);" id = "bars" class="icon" onclick="openFunction()"><i class="fa fa-bars"></i></a>
         </header>
         <div class="login-container">
             <h1>Let's be friends first!</h1>
@@ -59,7 +69,16 @@
         </div>
         
     </section>
-    
+    <script>
+        function openFunction() {
+           var nav = document.getElementById('dropdown');
+               nav.style.display = "block";
+           }
+       function closeFunction() {
+           var nav = document.getElementById('dropdown');
+           nav.style.display = "none"
+       }
+   </script>
     <section id="bottom-jumbo">
         <div class="slogan">
             <h1>"Health is <span>#WHEALTH."</span></h1>

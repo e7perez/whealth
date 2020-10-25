@@ -107,3 +107,29 @@
     opacity: .8;
     cursor: pointer;
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .locations-container {
+        height: 1420px;
+    }
+    .locations-container .info-container #map {
+        width: 100%;
+    }
+    .right-container {
+        width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 991px) {
+    .locations-container {
+        height: 1420px;
+    }
+    .locations-container .info-container #map {
+        width: 100%;
+    }
+    .right-container {
+        width: 100%;
+    }
+}
+

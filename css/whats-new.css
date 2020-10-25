@@ -121,7 +121,7 @@
 @media only screen and (min-width: 1274px) {
     .whats-new {
         height: 2000px;
-        
+        padding: 50px;
     }
 }
 
@@ -129,6 +129,5 @@
 @media only screen and (min-width: 1787px) {
     .whats-new {
         height: 100vh;
-        
     }
 }
