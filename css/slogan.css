@@ -4,7 +4,7 @@
 .slogan {
     height: 720px;
     width: 100%;
-    background: url(/img/slogan.png);
+    background: url(../img/slogan.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
