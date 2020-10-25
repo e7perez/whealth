@@ -1,0 +1,196 @@
+#top {
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    height: 100vh;
+    background: url(/img/landing-page-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    position: relative;
+}
+.topnav {
+    height: 80px;
+    background: transparent;
+    position: relative;
+    padding: 50px;
+}
+.logo {
+    float: left;
+}
+.logo a {
+    margin: 0px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+}
+.logo a span{
+    text-decoration: none;
+    color: #44E944;
+    font-size: 50px;
+    font-weight: 900;
+}
+.topnav ul {
+    margin: 20px 100px;
+    float: right;
+}
+.topnav li {
+    display: inline;
+    margin: 0px 20px;
+}
+.topnav li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+.topnav li a span{
+    border: 1px white solid;
+    padding: 3px 10px;
+}
+#bottom-nav {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.75);
+    bottom: 0;
+}
+#bottom-nav h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 30px;
+    margin: 35px 70px;
+    float: right;
+}
+#bottom-nav h2 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-right: 40px;
+    float: right;
+}
+#bottom-nav ul {
+    float: right;
+    margin-top: 20px;
+    margin-right: 300px;
+    
+}
+#bottom-nav li {
+    display: inline;
+    color: white;
+    font-size: 50px;
+    margin: 5px;
+}
+/* .container img {
+    position: absolute;
+    top: 1050px;
+    left: 700px;
+    z-index: 1;
+    
+} */
+#bottom-nav img {
+    position: absolute;
+    top: -200px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.topnav a i{
+    position: absolute;
+    float: right;
+    right: 0;
+    margin-right: 100px;
+    display: none;
+    color: white;
+    font-size: 80px;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    color: white;
+    z-index: 100;
+    display: none;
+    overflow: hidden;
+}
+.dropdown ul {
+    position: absolute;
+    top: 200px;
+}
+.dropdown ul li {
+    margin: 20px;
+}
+.dropdown ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 100px;
+}
+.dropdown a#icon-close {
+    color: white;
+    font-size: 150px;
+    position: absolute;
+    right: 60px;
+    margin: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 100;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .topnav ul li a {
+        display: none;
+    }
+    .topnav a i.icon {
+        float: right;
+        display: block;
+    }
+    .topnav ul {
+        margin: 0px;
+    }
+    .container {
+        width: 100vw;
+    }
+    #bottom-nav  {
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .topnav ul li a {
+        display: none;
+    }
+    .topnav a i {
+        float: right;
+        display: block;
+    }
+    .topnav ul {
+        margin: 0px;
+    }
+    .container {
+        width: 100vw;
+    }
+    #bottom-nav  {
+        display: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

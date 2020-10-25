@@ -1,0 +1,23 @@
+#bottom-jumbo {
+    font-family: 'Roboto', sans-serif;
+}
+.slogan {
+    height: 720px;
+    width: 100%;
+    background: url(/img/slogan.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slogan h1 {
+    font-size: 150px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.slogan h1 span {
+    color: #44E944;
+}

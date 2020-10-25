@@ -1,0 +1,249 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>WHEALTH</title>
+  <meta name="description" content="Health is Whealth">
+  <meta name="author" content="Whealth">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <section id="menu-section">
+        <header id="top-nav">
+            <div class="logo">
+                <a href="index.html">W<span>HEALTH</span></a>
+            </div>
+            <ul>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="order.html"><span>Order</span></a></li>
+            </ul>
+        </header>
+        <div class="locations-container">
+            <h1>Featured Locations</h1>
+            <div class="info-container">
+                <div id="map"></div>
+                <div class="right-container">
+                    <div class="my-slides">
+                        <h1>Brooklyn</h1>
+                        <ul>
+                            <li>
+                                <h3>HOURS: 11AM-8PM</h3>
+                            </li>
+                            <li>
+                                <h3>(718) 330-7300</h3>
+                            </li>
+                            <li>
+                                <h3>Brooklyn, NY</h3>
+                            </li>
+                        </ul>
+                        <a id="brooklyn-link">Get Directions</a>
+                        <img src="/img/brooklyn-location.jpg">
+                    </div>
+                    <div class="my-slides">
+                        <h1>Bronx</h1>
+                        <ul>
+                            <li>
+                                <h3>HOURS: 11AM-8PM</h3>
+                            </li>
+                            <li>
+                                <h3>(347) 333-7300</h3>
+                            </li>
+                            <li>
+                                <h3>Bronx, NY</h3>
+                            </li>
+                        </ul>
+                        <a id="bronx-link">Get Directions</a>
+                        <img src="/img/bronx-location.jpg">
+                    </div>
+                    <div class="my-slides">
+                        <h1>Lower East Side</h1>
+                        <ul>
+                            <li>
+                                <h3>HOURS: 11AM-8PM</h3>
+                            </li>
+                            <li>
+                                <h3>(212) 322-5600</h3>
+                            </li>
+                            <li>
+                                <h3>Lower East Side, NY</h3>
+                            </li>
+                        </ul>
+                        <a id="les-link">Get Directions</a>
+                        <img src="/img/les-location.jpg">
+                    </div>
+                    <div class="my-slides">
+                        <h1>Washington Heights</h1>
+                        <ul>
+                            <li>
+                                <h3>HOURS: 11AM-8PM</h3>
+                            </li>
+                            <li>
+                                <h3>(646) 499-5000</h3>
+                            </li>
+                            <li>
+                                <h3>Washington Heights, NY</h3>
+                            </li>
+                        </ul>
+                        <a id="heights-link">Get Directions</a>
+                        <img src="/img/heights-location.jpg">
+                    </div>
+                    <div class="my-slides">
+                        <h1>Upper East Side</h1>
+                        <ul>
+                            <li>
+                                <h3>HOURS: 11AM-8PM</h3>
+                            </li>
+                            <li>
+                                <h3>(917) 399-2100</h3>
+                            </li>
+                            <li>
+                                <h3>Upper East Side, NY</h3>
+                            </li>
+                        </ul>
+                        <a id="ues-link">Get Directions</a>
+                        <img src="/img/ues-location.jpg">
+                    </div>
+                    <div class="my-slides">
+                        <h1>Upper West Side</h1>
+                        <ul>
+                            <li>
+                                <h3>HOURS: 11AM-8PM</h3>
+                            </li>
+                            <li>
+                                <h3>(347) 320-3000</h3>
+                            </li>
+                            <li>
+                                <h3>Upper West Side, NY</h3>
+                            </li>
+                        </ul>
+                        <a id="uws-link">Get Directions</a>
+                        <img src="/img/uws-location.jpg">
+                    </div>
+                    <a id="right-arrow" onclick="plusSlides(-1)"><i class="fa fa-chevron-right"></i></a>
+                    <a id="left-arrow" onclick="plusSlides(1)"><i class="fa fa-chevron-left"></i></a>
+                </div>
+        </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        //Arrow Control
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("my-slides");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i=0; i < slides.length; i++){
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+    </script>
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmJlb1X9p0gsTmAO3ilm6YyrdfUZiWDqg&callback=initMap">
+    </script>
+    <script>
+        function initMap(){
+            const nyc = { lat: 40.760967, lng: -73.918292 };
+            const brooklynLocation = { lat: 40.678137, lng: -73.944362 }
+            const uwsLocation = { lat: 40.782977, lng: -73.969918 }
+            const lesLocation = { lat: 40.715081, lng: -73.985002 }
+            const uesLocation = { lat: 40.773779, lng: -73.956618 }
+            const heightsLocation = { lat: 40.841795, lng: -73.938788 }
+            const bronxLocation = { lat: 40.844940, lng: -73.866784}
+            const map =  new google.maps.Map(document.getElementById("map"), {
+                zoom: 10,
+                center: nyc,
+            });
+            const brooklynMarker = new google.maps.Marker({
+                position: brooklynLocation,
+                map: map,
+            });
+            brooklynMarker.addListener("click", () => {
+            map.setZoom(17);
+            map.setCenter(brooklynMarker.getPosition());
+            });
+            const uwsMarker = new google.maps.Marker({
+                position: uwsLocation,
+                map: map,
+            });
+            uwsMarker.addListener("click", () => {
+            map.setZoom(17);
+            map.setCenter(uwsMarker.getPosition());
+            });
+            const lesMarker = new google.maps.Marker({
+                position: lesLocation,
+                map: map,
+            });
+            lesMarker.addListener("click", () => {
+            map.setZoom(17);
+            map.setCenter(lesMarker.getPosition());
+            });
+            const uesMarker = new google.maps.Marker({
+                position: uesLocation,
+                map: map,
+            });
+            uesMarker.addListener("click", () => {
+            map.setZoom(17);
+            map.setCenter(uesMarker.getPosition());
+            });
+            const heightsMarker = new google.maps.Marker({
+                position: heightsLocation,
+                map: map,
+            });
+            heightsMarker.addListener("click", () => {
+            map.setZoom(17);
+            map.setCenter(heightsMarker.getPosition());
+            });
+            const bronxMarker = new google.maps.Marker({
+                position: bronxLocation,
+                map: map,
+            });
+            bronxMarker.addListener("click", () => {
+            map.setZoom(17);
+            map.setCenter(bronxMarker.getPosition());
+            });
+        }
+    </script>
+    
+    </section>
+    
+    <section id="bottom-jumbo">
+        <div class="slogan">
+            <h1>"Health is <span>#WHEALTH."</span></h1>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <h1>W<span>HEALTH</span></h1>
+            <h6>Restaurant Hours Mon-Sun 8AM-11PM</h6>
+            <h2>Health = Whealth</h2>
+            <h3>Tag Us #WHEALTH</h3>
+            <ul class="icons">
+                <li><i class="fa fa-twitter"></i></li>
+                <li><i class="fa fa-instagram"></i></li>
+                <li><i class="fa fa-facebook-square"></i></li>
+            </ul>
+            <ul class="links">
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html">Careers</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

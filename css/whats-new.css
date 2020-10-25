@@ -1,0 +1,95 @@
+#whats-new {
+    font-family: 'Roboto', sans-serif;
+}
+.whats-new {
+    height: 100vh;
+    width: 100%;
+    background: #EFEFEF;
+    position: relative;
+    padding: 50px;
+    text-align: center;
+}
+.whats-new h6 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 700;
+    font-size: 22px;
+    margin: 40px 0px;
+}
+.whats-new h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 50px;
+}
+.trio {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.box {
+    height: 700px;
+    width: 550px;
+    background: white;
+    position: relative;
+    padding-top: 25px;
+    margin: 60px 20px ;
+}
+.box img {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.box .circle {
+    position: absolute;
+    background: white;
+    height: 200px;
+    width: 200px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 440px;
+    border-radius: 50%;
+    text-align: center;
+}
+.box .circle span{
+    font-size: 60px;
+    font-weight: 700;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 30px;
+}
+.box h3{
+    position: absolute;
+    bottom: 0;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    right: 0;
+    left: 0;
+    margin: 100px 0px;
+}
+.box p{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    right: 0;
+    left: 0;
+    margin-bottom: 50px;
+    font-size: 22px;
+}
+.whats-new a{
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+    border: 3px solid black;
+    padding: 5px 2.5px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}

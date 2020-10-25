@@ -1,0 +1,109 @@
+.locations-container {
+    height: 1000px;
+}
+.locations-container h1 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    margin: 50px;
+}
+.locations-container .info-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.locations-container .info-container #map{
+    /* background: red; */
+    height: 600px;
+    width: 40%;
+    margin: 20px;
+}
+.right-container {
+    height: 600px;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+}
+.right-container::after {
+    content: "";
+    background: rgba(0, 0, 0, .2);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1; 
+}
+.right-container img{
+    height: 600px;
+    width: 1270px;
+    object-fit: cover;
+}
+.right-container .my-slides h1{
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 60px auto;
+    color: #44E944;
+    font-size: 100px;
+    font-weight: 900;
+    z-index: 2;
+}
+.right-container .my-slides ul {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 20px auto;
+    top: 30%;
+    text-align: center;
+    z-index: 2;
+}
+.right-container .my-slides ul li h3{
+    color: white;
+    font-size: 30px;
+}
+.right-container .my-slides ul li {
+    margin: 10px;
+}
+.right-container a#ues-link,#uws-link,#heights-link,#les-link,#bronx-link,#brooklyn-link{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 50px auto;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight: 900;
+    padding: 2.5px 5px;
+    z-index: 2;
+    cursor: pointer;
+}
+.right-container a#right-arrow {
+    position: absolute;
+    right: 0;
+    top: 45%;
+    z-index: 2;
+    color: white;
+    font-size: 40px;
+    margin: 10px;
+    opacity: .8;
+    cursor: pointer;
+}
+.right-container a#left-arrow {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    z-index: 2;
+    color: white;
+    font-size: 40px;
+    margin: 10px;
+    opacity: .8;
+    cursor: pointer;
+}
